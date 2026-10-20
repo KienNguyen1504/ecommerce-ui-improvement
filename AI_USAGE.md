@@ -4,7 +4,7 @@
 Tên công cụ: Claude
 
 ## 2. Mục đích sử dụng
-- Soạn nháp bảng khảo sát 5 khu vực của Shopee từ 8 ảnh chụp màn hình cung cấp.
+- Soạn nháp bảng khảo sát 5 khu vực của Shopee từ 7 ảnh chụp màn hình cung cấp.
 - Phân tích giao diện theo 5 khu vực (Prompt 1) và đề xuất cải tiến.
 - Đề xuất phương án thiết kế thẻ sản phẩm (Prompt 2).
 - Tạo mã HTML/CSS ban đầu và giải thích mã (Prompt 3).
@@ -57,8 +57,8 @@ Mỗi thẻ hiển thị giá gốc (gạch ngang), giá khuyến mãi và nhãn
 
 **Kiểm tra giao diện:** mở bằng trình duyệt, kiểm tra ở kích thước máy tính (1280px) và điện thoại (375px bằng Chrome DevTools): số cột đổi 4 → 2, không bị cuộn ngang, ảnh không méo.
 
-**Điểm tôi tự phát hiện và sửa:**
-- - Thêm hiệu ứng :active (thu nhỏ nút còn 97%) cho nút "Thêm vào giỏ" (file css/style.css, class .btn-add). Lý do: trên điện thoại không có thao tác rê chuột nên :hover gần như không có tác dụng, cần phản hồi khi chạm nút. Đã kiểm tra bằng cách bấm giữ nút trên trình duyệt.
+**Điểm tự phát hiện và sửa:**
+- Thêm hiệu ứng :active (thu nhỏ nút còn 97%) cho nút "Thêm vào giỏ" (file css/style.css, class .btn-add). Lý do: trên điện thoại không có thao tác rê chuột nên :hover gần như không có tác dụng, cần phản hồi khi chạm nút. Đã kiểm tra bằng cách bấm giữ nút trên trình duyệt.
 
 ## 6. Phần tôi hiểu và có thể giải thích
 - **Cấu trúc HTML:** `header` (tiêu đề), `main > section` (khu vực sản phẩm, có `h2`), `ul.product-grid > li > article.product-card` (mỗi sản phẩm là một thẻ độc lập), `img` có `alt` mô tả, `del` cho giá gốc gạch ngang, `button type="button"` cho nút thao tác.
