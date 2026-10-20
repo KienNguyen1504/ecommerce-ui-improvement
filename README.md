@@ -1,7 +1,7 @@
 # E-commerce UI Improvement
 
 ## 1. Giới thiệu
-Bài tập cá nhân Chương 1 môn Phát triển ứng dụng TMĐT. Em khảo sát website Shopee Việt Nam và chọn cải tiến **thẻ sản phẩm** (product card) trong danh sách sản phẩm: hiển thị rõ giá bán, giá gốc, mức giảm, và bố cục lưới phù hợp cả máy tính lẫn điện thoại.
+Bài tập cá nhân Chương 1 môn Phát triển ứng dụng TMĐT. Em khảo sát website Shopee Việt Nam và chọn cải tiến **thẻ sản phẩm** trong danh sách sản phẩm: hiển thị rõ giá bán, giá gốc, mức giảm, và bố cục lưới phù hợp cả máy tính lẫn điện thoại.
 
 ## 2. Website tham khảo
 - Tên website: Shopee Việt Nam
