@@ -1,54 +1,52 @@
-# E-commerce UI Improvement
+# VoltLab — Website phụ kiện công nghệ (Bài tập cá nhân Buổi 2)
 
-## 1. Giới thiệu
-Bài tập cá nhân Chương 1 môn Phát triển ứng dụng TMĐT. Em khảo sát website Shopee Việt Nam và chọn cải tiến **thẻ sản phẩm** trong danh sách sản phẩm: hiển thị rõ giá bán, giá gốc, mức giảm, và bố cục lưới phù hợp cả máy tính lẫn điện thoại.
+**Môn học:** Phát triển ứng dụng WEB/TMĐT · **Chủ đề:** Cải tiến giao diện phụ kiện điện thoại từ Buổi 1.
 
-## 2. Website tham khảo
-- Tên website: Shopee Việt Nam
-- URL: https://shopee.vn
-- Ngày khảo sát: 18/10/2026
-- Khu vực đã khảo sát: Trang chủ, Danh mục sản phẩm, Chi tiết sản phẩm, Tìm kiếm, Giỏ hàng
-- Bảng khảo sát đầy đủ: xem [survey.md](survey.md)
-- Ảnh chụp minh chứng: thư mục [images/screenshots](images/screenshots)
+VoltLab là **website mẫu bằng HTML5 và CSS3**, xây dựng theo phong cách giao diện thương mại điện tử hiện đại. Dự án kế thừa **8 sản phẩm cùng mức giá mẫu đã có từ Buổi 1**; không thay đổi repository GitHub cũ. Giao diện thiết kế lại để dễ điều hướng, dễ so sánh giá và xem thông số.
 
-## 3. Chức năng
-- Hiển thị danh sách 8 sản phẩm mẫu dạng lưới.
-- Mỗi thẻ hiển thị: ảnh, tên (tối đa 2 dòng), giá bán, giá gốc gạch ngang, nhãn % giảm, đánh giá, số đã bán, nút "Thêm vào giỏ".
-- Sản phẩm không giảm giá chỉ hiển thị giá bán, không hiện nhãn hay giá gạch ngang.
-- Bố cục tự đổi số cột: 2 cột (điện thoại), 3 cột (máy tính bảng), 4 cột (máy tính).
-- Hiệu ứng khi rê chuột lên thẻ và nút.
+## Cách chạy
 
-## 4. Công nghệ
-- HTML5
-- CSS3 (CSS Grid, Flexbox, media query)
-- Không dùng JavaScript, backend hay thư viện ngoài.
+Mở thư mục bằng **VS Code**, mở `index.html` trong Chrome/Edge hoặc dùng tiện ích **Live Server → Open with Live Server**. Không cần cài thư viện, `npm install` hoặc kết nối mạng. Website chỉ sử dụng HTML/CSS và ảnh SVG lưu trong `images/`.
 
-## 5. Cách chạy
-Mở file `index.html` bằng trình duyệt (hoặc dùng extension Live Server trong VS Code).
-Demo: (dán link GitHub Pages sau khi bật, dạng `https://USERNAME.github.io/ecommerce-ui-improvement/`)
+## Cấu trúc trang
 
-## 6. Cải tiến đã thực hiện
-**Vấn đề ban đầu (quan sát trên Shopee):**
-- Thẻ sản phẩm trong trang danh mục chỉ hiện một mức giá, chưa thấy giá gốc gạch ngang nên khó nhận ra mức tiết kiệm.
-- Nhãn % giảm nhỏ, nằm lệch ở góc ảnh.
-- Nhiều nhãn chồng nhau (Voucher Xtra, Hoa Hồng Xtra...) và ảnh chứa nhiều chữ khuyến mãi nên mắt khó dừng ở thông tin chính (tên, giá).
-- Tên sản phẩm bị cắt bằng dấu "...".
-- Khi xem ở kích thước điện thoại (375px), danh sách hiển thị [2] cột; thẻ vẫn chứa nhiều nhãn nhỏ nên [chữ giá và nhãn giảm giá khá nhỏ / thông tin chính khó đọc nhanh].
+- `index.html`: Trang chủ, banner, danh mục và sản phẩm nổi bật.
+- `products.html`: Tất cả 8 sản phẩm.
+- `products-price-low.html`, `products-price-high.html`: Sản phẩm xếp theo giá (liên kết đến các trang HTML tĩnh riêng).
+- `categories.html`: Trang danh mục.
+- `category-pin.html`, `category-sac.html`, `category-khac.html`: Ba nhóm hàng.
+- `product-1.html` đến `product-8.html`: Tám trang chi tiết sản phẩm độc lập.
+- `about.html`: Giới thiệu dự án.
+- `guide.html`: Cẩm nang và FAQ.
+- `css/style.css`: CSS riêng dùng chung toàn website.
+- `images/`: Ảnh SVG phục vụ demo, không phụ thuộc link ảnh ngoài.
+- `evidence/`: Ảnh và kết quả kiểm thử tự động.
+- `BAO_CAO_THUC_HANH_BUOI_2.docx`: Báo cáo Word gồm kiểm thử và **đủ 7 câu hỏi kiến thức**.
+- `AI_USAGE_BUOI2.md`: Nhật ký sử dụng AI trong Buổi 2.
 
-**Thay đổi đã thực hiện:**
-- Giá bán cỡ chữ lớn, màu nhấn; giá gốc nhỏ, màu xám, gạch ngang (`<del>`).
-- Nhãn % giảm bo tròn, nền đậm, đặt cố định góc trên bên phải ảnh.
-- Mỗi thẻ chỉ gồm ảnh, tên, giá, đánh giá, nút; không chồng nhiều nhãn.
-- Ảnh tỉ lệ 1:1 với `object-fit: cover`; tên giới hạn 2 dòng; nút luôn nằm đáy thẻ để các thẻ thẳng hàng.
-- Lưới mobile-first: 2 cột, mở rộng lên 3 và 4 cột bằng media query.
+**Tổng cộng: 18 trang HTML.** Các liên kết trong menu, danh mục, thẻ sản phẩm, trang chi tiết và liên kết xếp giá đều dẫn đến trang HTML riêng.
 
-**Điểm tôi tự phát hiện và sửa sau khi kiểm tra:**
-- - Thêm hiệu ứng :active (thu nhỏ nút còn 97%) cho nút "Thêm vào giỏ" (file css/style.css, class .btn-add). Lý do: trên điện thoại không có thao tác rê chuột nên :hover gần như không có tác dụng, cần phản hồi khi chạm nút. Đã kiểm tra bằng cách bấm giữ nút trên trình duyệt.
+## Kiến thức thực hành
 
-## 7. Hỗ trợ từ AI
-AI (Claude) hỗ trợ: soạn nháp bảng khảo sát từ ảnh chụp, phân tích giao diện, đề xuất bố cục thẻ sản phẩm, và tạo mã HTML/CSS ban đầu. Tôi đã tự khảo sát và chụp ảnh Shopee, đối chiếu nhận xét của AI với ảnh, chạy thử trang trên trình duyệt ở kích thước máy tính và điện thoại, tự chỉnh sửa và giải thích được các phần mã quan trọng. Chi tiết xem [AI_USAGE.md](AI_USAGE.md).
+- HTML5 có ngữ nghĩa: `header`, `nav`, `main`, `section`, `article`, `footer`, tiêu đề `h1/h2/h3`, `ul/li`, `img` có `alt`, `table`, `details/summary`.
+- CSS selector và Box Model: `.product-card`, `.card-info`, `.price`, `.sale-ribbon`, `margin`, `padding`, `border`, `border-radius`, `box-sizing`.
+- Flexbox: menu, header, các nút và nhóm thông tin trên thẻ.
+- CSS Grid: danh sách thẻ sản phẩm và bố cục banner.
+- Responsive (1366px, 768px, 390px và 320px); `:hover`, `:focus-visible`, `transition`.
+- **Font chữ:** `Segoe UI`, `Arial`, `Helvetica`, `sans-serif` — font hệ thống, không tải Google Fonts, tránh lỗi thiếu font khi mở bằng VS Code.
 
-## Nguồn hình ảnh và dữ liệu
-- Ảnh sản phẩm `images/product-*.jpg` lấy từ các trang bán hàng trực tuyến.
-- Tên, giá, đánh giá sản phẩm là dữ liệu mẫu tự đặt.
-- Ảnh trong `images/screenshots` là ảnh chụp màn hình Shopee dùng để minh họa nhận xét khảo sát.
+## Lưu ý phạm vi
+
+Đây là **website demo học tập**. Hình ảnh, giá, giá gốc, thông số và các mức khuyến mãi không phải chào bán thực tế. **Không có JavaScript, tìm kiếm theo từ khóa, giỏ hàng, đặt hàng hoặc thanh toán thật**; những nội dung đó dành cho các buổi học tiếp theo. Chức năng “sắp xếp theo giá” dùng các tệp HTML tĩnh đã sắp sẵn, không phải thuật toán JavaScript.
+
+## Tiếp tục repository Buổi 1
+
+Repository cũ: https://github.com/KienNguyen1504/ecommerce-ui-improvement
+
+1. Sao lưu repository và chụp ảnh giao diện cũ trước khi thay đổi.
+2. Trong thư mục dự án cũ (có `.git/`), chép đè `index.html`, `css/style.css`, `images/`, thêm các trang HTML mới và `BAO_CAO_THUC_HANH_BUOI_2.docx`.
+3. **Giữ lại `survey.md`, `AI_USAGE.md` và ảnh Buổi 1** có trong repository gốc. Các file này **không được tạo giả** trong gói vì chỉ có bản gốc trên máy/GitHub của sinh viên.
+4. Chạy và tự kiểm tra từng trang; tự sửa ít nhất một điểm HTML/CSS và ghi vào **file Word**, chụp ảnh trước/sau sửa.
+5. Chạy `git status`, rồi `git add .`, `git commit -m "Improve multi-page storefront UI with HTML5 CSS3"`, `git push` trên đúng nhánh đang làm.
+
+**Về Codex trong VS Code:** Website này không cần Codex hoạt động để xem hoặc chỉnh sửa mã. Nếu extension Codex bị lỗi, đó là vấn đề cấu hình/đăng nhập hoặc extension riêng, không phải do font trong CSS.

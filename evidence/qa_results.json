@@ -1,0 +1,136 @@
+{
+  "pages": 18,
+  "broken_file_links": [],
+  "screens": {
+    "index_1366": {
+      "width": 1366,
+      "viewport": 1366,
+      "body": 1366,
+      "brokenImageCount": 0,
+      "cards": 8,
+      "gridCols": "296.5px 296.5px 296.5px 296.5px",
+      "font": "\"Segoe UI\", Arial, Helvetica, sans-serif",
+      "priceFont": "29px"
+    },
+    "index_768": {
+      "width": 768,
+      "viewport": 768,
+      "body": 768,
+      "brokenImageCount": 0,
+      "cards": 8,
+      "gridCols": "356px 356px",
+      "font": "\"Segoe UI\", Arial, Helvetica, sans-serif",
+      "priceFont": "29px"
+    },
+    "index_390": {
+      "width": 390,
+      "viewport": 390,
+      "body": 390,
+      "brokenImageCount": 0,
+      "cards": 8,
+      "gridCols": "178px 178px",
+      "font": "\"Segoe UI\", Arial, Helvetica, sans-serif",
+      "priceFont": "20.67px"
+    },
+    "products_1366": {
+      "width": 1366,
+      "viewport": 1366,
+      "body": 1366,
+      "brokenImageCount": 0,
+      "cards": 8,
+      "gridCols": "321.328px 321.328px 321.344px",
+      "font": "\"Segoe UI\", Arial, Helvetica, sans-serif",
+      "priceFont": "29px"
+    },
+    "products_768": {
+      "width": 768,
+      "viewport": 768,
+      "body": 768,
+      "brokenImageCount": 0,
+      "cards": 8,
+      "gridCols": "356.5px 356.5px",
+      "font": "\"Segoe UI\", Arial, Helvetica, sans-serif",
+      "priceFont": "29px"
+    },
+    "products_390": {
+      "width": 390,
+      "viewport": 390,
+      "body": 390,
+      "brokenImageCount": 0,
+      "cards": 8,
+      "gridCols": "178px 178px",
+      "font": "\"Segoe UI\", Arial, Helvetica, sans-serif",
+      "priceFont": "20.67px"
+    },
+    "categories_1366": {
+      "width": 1366,
+      "viewport": 1366,
+      "body": 1366,
+      "brokenImageCount": 0,
+      "cards": 0,
+      "gridCols": null,
+      "font": "\"Segoe UI\", Arial, Helvetica, sans-serif",
+      "priceFont": null
+    },
+    "category-pin_1366": {
+      "width": 1366,
+      "viewport": 1366,
+      "body": 1366,
+      "brokenImageCount": 0,
+      "cards": 3,
+      "gridCols": "321.328px 321.328px 321.344px",
+      "font": "\"Segoe UI\", Arial, Helvetica, sans-serif",
+      "priceFont": "29px"
+    },
+    "product-1_1366": {
+      "width": 1366,
+      "viewport": 1366,
+      "body": 1366,
+      "brokenImageCount": 0,
+      "cards": 4,
+      "gridCols": "296.5px 296.5px 296.5px 296.5px",
+      "font": "\"Segoe UI\", Arial, Helvetica, sans-serif",
+      "priceFont": "29px"
+    },
+    "product-1_768": {
+      "width": 768,
+      "viewport": 768,
+      "body": 768,
+      "brokenImageCount": 0,
+      "cards": 4,
+      "gridCols": "356px 356px",
+      "font": "\"Segoe UI\", Arial, Helvetica, sans-serif",
+      "priceFont": "29px"
+    },
+    "product-1_390": {
+      "width": 390,
+      "viewport": 390,
+      "body": 390,
+      "brokenImageCount": 0,
+      "cards": 4,
+      "gridCols": "178px 178px",
+      "font": "\"Segoe UI\", Arial, Helvetica, sans-serif",
+      "priceFont": "20.67px"
+    },
+    "about_1366": {
+      "width": 1366,
+      "viewport": 1366,
+      "body": 1366,
+      "brokenImageCount": 0,
+      "cards": 0,
+      "gridCols": null,
+      "font": "\"Segoe UI\", Arial, Helvetica, sans-serif",
+      "priceFont": null
+    },
+    "guide_1366": {
+      "width": 1366,
+      "viewport": 1366,
+      "body": 1366,
+      "brokenImageCount": 0,
+      "cards": 0,
+      "gridCols": null,
+      "font": "\"Segoe UI\", Arial, Helvetica, sans-serif",
+      "priceFont": null
+    }
+  }
+}

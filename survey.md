@@ -16,6 +16,6 @@
 
 ## Ảnh minh chứng
 Xem thư mục `images/screenshots/`:
-- `01-trang-chu.png`, `02-danh-muc.png`, `03-chi-tiet.png`, `03b-danh-gia.png`
+- `01-trang-chu.png`, `02-danh-muc.png`, `03a-chi-tiet.png`, `03b-danh-gia.png`
 - `04a-tim-kiem-goi-y.png`, `04b-tim-kiem-ket-qua.png`
-- `05-gio-hang.png` (trang giỏ hàng), `05a-gio-hang-popup.png` (popup)
+- `05-gio-hang.png` (trang giỏ hàng)

@@ -1,0 +1,52 @@
+[
+  {
+    "activeElement": "BODY",
+    "skipTop": -100,
+    "scrollTop": 0,
+    "screen": 1366,
+    "docWidth": 1366,
+    "imageCount": 8,
+    "brokenImages": [],
+    "gridCols": 4,
+    "links": [],
+    "navHoverFrom": "rgb(24, 36, 58)",
+    "navHoverTo": "rgb(24, 36, 58)",
+    "hoverTransform": "matrix(1, 0, 0, 1, 0, -5)"
+  },
+  {
+    "activeElement": "BODY",
+    "skipTop": -100,
+    "scrollTop": 0,
+    "screen": 768,
+    "docWidth": 768,
+    "imageCount": 8,
+    "brokenImages": [],
+    "gridCols": 2,
+    "links": []
+  },
+  {
+    "activeElement": "BODY",
+    "skipTop": -100,
+    "scrollTop": 0,
+    "screen": 390,
+    "docWidth": 390,
+    "imageCount": 8,
+    "brokenImages": [],
+    "gridCols": 2,
+    "links": [],
+    "detailsOpened": true,
+    "summaryFocusVisible": true,
+    "summaryFocusOutline": "solid"
+  },
+  {
+    "activeElement": "BODY",
+    "skipTop": -100,
+    "scrollTop": 0,
+    "screen": 320,
+    "docWidth": 320,
+    "imageCount": 8,
+    "brokenImages": [],
+    "gridCols": 2,
+    "links": []
+  }
+]
