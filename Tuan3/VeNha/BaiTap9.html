@@ -1,0 +1,329 @@
+<!doctype html>
+
+
+<html lang="vi">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#fcfaff" name="theme-color"/>
+<meta content="Một biểu tượng. Nhiều ngữ cảnh. - CSS Studio 03 | Bài tập CSS Tuần 3 - UEH" name="description"/>
+<title>Một biểu tượng. Nhiều ngữ cảnh. | CSS Lab · Week 03</title>
+<link href="assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="css/style.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet"/>
+</head>
+<body class="lesson-page">
+<a class="skip-link" href="#main">
+   Bỏ qua điều hướng
+  </a>
+<header class="site-header"><div class="header-inner"><a aria-label="Kiên | CSS Lab Tuần 3" class="brand" href="index.html"><span class="brand-mark">K.</span><span>kiên<span class="brand-muted"> / css lab</span></span></a><nav aria-label="Điều hướng" class="site-nav"><a href="index.html">Trang chủ</a><a aria-current="location" href="index.html#assignments">Bài tập</a><a href="index.html#featured">Bài nổi bật</a></nav><a class="header-cta" href="https://github.com/KienNguyen1504/ecommerce-ui-improvement" rel="noopener noreferrer" target="_blank">GitHub <svg aria-hidden="true" fill="none" height="15" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24" width="15"><path d="M14 4h6v6M20 4l-9 9"></path><path d="M18 13v6a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6"></path></svg></a></div></header>
+<main class="page-container" id="main">
+<nav aria-label="Breadcrumb" class="breadcrumb">
+<a href="index.html">Trang chủ</a>
+<span>
+     /
+    </span>
+<span>
+     BÀI 9
+    </span>
+</nav>
+<section class="lesson-head">
+<div>
+<span class="eyebrow">
+      BÀI 9 · CSS PRACTICE
+     </span>
+<h1>
+      Một biểu tượng. Nhiều ngữ cảnh.
+     </h1>
+<p>
+      Khám phá và gọi Font Awesome bằng class CSS, đồng thời giữ khả năng đọc hiểu khi chưa có Internet.
+     </p>
+</div>
+<div class="lesson-badge">
+<svg aria-hidden="true" class="icon" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24" width="24">
+<path d="m8 7-5 5 5 5m8-10 5 5-5 5m-3-16-3 20">
+</path>
+</svg>
+<span>
+      LAB
+      <br/>
+<b>
+       9
+      </b>
+</span>
+</div>
+</section>
+<div class="skill-pills">
+<span>
+     Font Awesome
+    </span>
+<span>
+     CDN
+    </span>
+<span>
+     Fallback
+    </span>
+</div>
+<section class="surface">
+<div class="surface-top">
+<span class="eyebrow">
+      ICON LIBRARY
+     </span>
+<h2>
+      12 Font Awesome icons + local visual fallback
+     </h2>
+</div>
+<p class="muted">
+     Bài yêu cầu tích hợp Font Awesome. Các icon được khai báo bằng class
+     <code>
+      fa-solid
+     </code>
+     /
+     <code>
+      fa-*
+     </code>
+     ; biểu tượng chữ dự phòng giúp trang không bị trống hoàn toàn nếu CDN chưa tải.
+    </p>
+<div class="fa-grid">
+<article class="icon-swatch">
+<div class="icon-preview">
+<span aria-hidden="true" class="icon-fallback">
+        ⌂
+       </span>
+<i aria-hidden="true" class="fa-solid fa-house">
+</i>
+</div>
+<b>
+       Trang chủ
+      </b>
+<code>
+       fa-house
+      </code>
+</article>
+<article class="icon-swatch">
+<div class="icon-preview">
+<span aria-hidden="true" class="icon-fallback">
+        &lt;/&gt;
+       </span>
+<i aria-hidden="true" class="fa-solid fa-code">
+</i>
+</div>
+<b>
+       Lập trình
+      </b>
+<code>
+       fa-code
+      </code>
+</article>
+<article class="icon-swatch">
+<div class="icon-preview">
+<span aria-hidden="true" class="icon-fallback">
+        ✦
+       </span>
+<i aria-hidden="true" class="fa-solid fa-graduation-cap">
+</i>
+</div>
+<b>
+       Học tập
+      </b>
+<code>
+       fa-graduation-cap
+      </code>
+</article>
+<article class="icon-swatch">
+<div class="icon-preview">
+<span aria-hidden="true" class="icon-fallback">
+        ◈
+       </span>
+<i aria-hidden="true" class="fa-solid fa-palette">
+</i>
+</div>
+<b>
+       Thiết kế
+      </b>
+<code>
+       fa-palette
+      </code>
+</article>
+<article class="icon-swatch">
+<div class="icon-preview">
+<span aria-hidden="true" class="icon-fallback">
+        ▤
+       </span>
+<i aria-hidden="true" class="fa-solid fa-layer-group">
+</i>
+</div>
+<b>
+       Layers
+      </b>
+<code>
+       fa-layer-group
+      </code>
+</article>
+<article class="icon-swatch">
+<div class="icon-preview">
+<span aria-hidden="true" class="icon-fallback">
+        ▯
+       </span>
+<i aria-hidden="true" class="fa-solid fa-mobile-screen">
+</i>
+</div>
+<b>
+       Mobile
+      </b>
+<code>
+       fa-mobile-screen
+      </code>
+</article>
+<article class="icon-swatch">
+<div class="icon-preview">
+<span aria-hidden="true" class="icon-fallback">
+        ◎
+       </span>
+<i aria-hidden="true" class="fa-solid fa-globe">
+</i>
+</div>
+<b>
+       Web
+      </b>
+<code>
+       fa-globe
+      </code>
+</article>
+<article class="icon-swatch">
+<div class="icon-preview">
+<span aria-hidden="true" class="icon-fallback">
+        ♥
+       </span>
+<i aria-hidden="true" class="fa-solid fa-heart">
+</i>
+</div>
+<b>
+       Yêu thích
+      </b>
+<code>
+       fa-heart
+      </code>
+</article>
+<article class="icon-swatch">
+<div class="icon-preview">
+<span aria-hidden="true" class="icon-fallback">
+        ★
+       </span>
+<i aria-hidden="true" class="fa-solid fa-star">
+</i>
+</div>
+<b>
+       Đánh giá
+      </b>
+<code>
+       fa-star
+      </code>
+</article>
+<article class="icon-swatch">
+<div class="icon-preview">
+<span aria-hidden="true" class="icon-fallback">
+        ✉
+       </span>
+<i aria-hidden="true" class="fa-solid fa-envelope">
+</i>
+</div>
+<b>
+       Email
+      </b>
+<code>
+       fa-envelope
+      </code>
+</article>
+<article class="icon-swatch">
+<div class="icon-preview">
+<span aria-hidden="true" class="icon-fallback">
+        ◇
+       </span>
+<i aria-hidden="true" class="fa-solid fa-shield-halved">
+</i>
+</div>
+<b>
+       Bảo mật
+      </b>
+<code>
+       fa-shield-halved
+      </code>
+</article>
+<article class="icon-swatch">
+<div class="icon-preview">
+<span aria-hidden="true" class="icon-fallback">
+        ▣
+       </span>
+<i aria-hidden="true" class="fa-solid fa-camera">
+</i>
+</div>
+<b>
+       Hình ảnh
+      </b>
+<code>
+       fa-camera
+      </code>
+</article>
+</div>
+<p class="note">
+     Icon từ CDN yêu cầu kết nối mạng. Nếu ngoại tuyến, biểu tượng dự phòng vẫn hiển thị; khi có mạng, glyph Font Awesome hiện cạnh biểu tượng dự phòng để đối chiếu.
+    </p>
+</section>
+<section class="surface">
+<div class="surface-top">
+<span class="eyebrow">
+      CODE / GIẢI THÍCH
+     </span>
+<h2>
+      Cách nhúng và gọi Font Awesome
+     </h2>
+</div>
+<pre class="code-sample"><code>&lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"&gt;
+&lt;i class="fa-solid fa-house" aria-hidden="true"&gt;&lt;/i&gt;</code></pre>
+<p>
+     Thư viện icon là
+     <strong>
+      tài nguyên bên ngoài
+     </strong>
+     ; HTML/CSS cơ bản vẫn tự chạy. Các icon không thay thế nhãn văn bản để bảo đảm người dùng vẫn hiểu chức năng khi icon không tải.
+    </p>
+</section>
+<div class="prev-next">
+<a href="BaiTap8b.html">
+     ← Bài trước
+    </a>
+<a href="index.html">
+     Về trang tổng quan →
+    </a>
+</div>
+</main>
+<footer class="site-footer">
+<div class="footer-inner">
+<div>
+<strong>
+      CSS STUDIO / 03
+     </strong>
+<p>
+      Thực hành CSS có hệ thống · Phát triển ứng dụng WEB/TMĐT · UEH
+     </p>
+</div>
+<a href="index.html">
+     Về trang tổng quan
+     <svg aria-hidden="true" class="icon" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24" width="16">
+<path d="M5 12h14m-6-6 6 6-6 6">
+</path>
+</svg>
+</a>
+</div>
+<div class="footer-bottom">
+<span>
+     2026 · Bài tập cá nhân · TS. Nguyễn Mạnh Tuấn
+    </span>
+<span>
+     HTML5 · CSS3 · Responsive · No framework
+    </span>
+</div>
+</footer>
+</body>
+</html>

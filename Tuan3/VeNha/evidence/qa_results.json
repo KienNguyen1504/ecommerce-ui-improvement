@@ -1,0 +1,280 @@
+{
+  "cases": [
+    {
+      "page": "BaiTap1.html",
+      "viewport": 1366,
+      "overflow": false,
+      "scrollWidth": 1366,
+      "broken_images": [],
+      "missing_local_links": [],
+      "font": "\"Segoe UI\", Tahoma, Arial, sans-serif"
+    },
+    {
+      "page": "BaiTap2.html",
+      "viewport": 1366,
+      "overflow": false,
+      "scrollWidth": 1366,
+      "broken_images": [],
+      "missing_local_links": [],
+      "font": "\"Segoe UI\", Tahoma, Arial, sans-serif"
+    },
+    {
+      "page": "BaiTap4.html",
+      "viewport": 1366,
+      "overflow": false,
+      "scrollWidth": 1366,
+      "broken_images": [],
+      "missing_local_links": [],
+      "font": "\"Segoe UI\", Tahoma, Arial, sans-serif"
+    },
+    {
+      "page": "BaiTap5.html",
+      "viewport": 1366,
+      "overflow": false,
+      "scrollWidth": 1366,
+      "broken_images": [],
+      "missing_local_links": [],
+      "font": "\"Segoe UI\", Tahoma, Arial, sans-serif"
+    },
+    {
+      "page": "BaiTap6.html",
+      "viewport": 1366,
+      "overflow": false,
+      "scrollWidth": 1366,
+      "broken_images": [],
+      "missing_local_links": [],
+      "font": "\"Segoe UI\", Tahoma, Arial, sans-serif"
+    },
+    {
+      "page": "BaiTap7.html",
+      "viewport": 1366,
+      "overflow": false,
+      "scrollWidth": 1366,
+      "broken_images": [],
+      "missing_local_links": [],
+      "font": "\"Segoe UI\", Tahoma, Arial, sans-serif"
+    },
+    {
+      "page": "BaiTap8a.html",
+      "viewport": 1366,
+      "overflow": false,
+      "scrollWidth": 1366,
+      "broken_images": [],
+      "missing_local_links": [],
+      "font": "\"Segoe UI\", Tahoma, Arial, sans-serif"
+    },
+    {
+      "page": "BaiTap8b.html",
+      "viewport": 1366,
+      "overflow": false,
+      "scrollWidth": 1366,
+      "broken_images": [],
+      "missing_local_links": [],
+      "font": "\"Segoe UI\", Tahoma, Arial, sans-serif"
+    },
+    {
+      "page": "BaiTap9.html",
+      "viewport": 1366,
+      "overflow": false,
+      "scrollWidth": 1366,
+      "broken_images": [],
+      "missing_local_links": [],
+      "font": "\"Segoe UI\", Tahoma, Arial, sans-serif"
+    },
+    {
+      "page": "index.html",
+      "viewport": 1366,
+      "overflow": false,
+      "scrollWidth": 1366,
+      "broken_images": [],
+      "missing_local_links": [],
+      "font": "\"Segoe UI\", Tahoma, Arial, sans-serif"
+    },
+    {
+      "page": "BaiTap1.html",
+      "viewport": 768,
+      "overflow": false,
+      "scrollWidth": 768,
+      "broken_images": [],
+      "missing_local_links": [],
+      "font": "\"Segoe UI\", Tahoma, Arial, sans-serif"
+    },
+    {
+      "page": "BaiTap2.html",
+      "viewport": 768,
+      "overflow": false,
+      "scrollWidth": 768,
+      "broken_images": [],
+      "missing_local_links": [],
+      "font": "\"Segoe UI\", Tahoma, Arial, sans-serif"
+    },
+    {
+      "page": "BaiTap4.html",
+      "viewport": 768,
+      "overflow": false,
+      "scrollWidth": 768,
+      "broken_images": [],
+      "missing_local_links": [],
+      "font": "\"Segoe UI\", Tahoma, Arial, sans-serif"
+    },
+    {
+      "page": "BaiTap5.html",
+      "viewport": 768,
+      "overflow": false,
+      "scrollWidth": 768,
+      "broken_images": [],
+      "missing_local_links": [],
+      "font": "\"Segoe UI\", Tahoma, Arial, sans-serif"
+    },
+    {
+      "page": "BaiTap6.html",
+      "viewport": 768,
+      "overflow": false,
+      "scrollWidth": 768,
+      "broken_images": [],
+      "missing_local_links": [],
+      "font": "\"Segoe UI\", Tahoma, Arial, sans-serif"
+    },
+    {
+      "page": "BaiTap7.html",
+      "viewport": 768,
+      "overflow": false,
+      "scrollWidth": 768,
+      "broken_images": [],
+      "missing_local_links": [],
+      "font": "\"Segoe UI\", Tahoma, Arial, sans-serif"
+    },
+    {
+      "page": "BaiTap8a.html",
+      "viewport": 768,
+      "overflow": false,
+      "scrollWidth": 768,
+      "broken_images": [],
+      "missing_local_links": [],
+      "font": "\"Segoe UI\", Tahoma, Arial, sans-serif"
+    },
+    {
+      "page": "BaiTap8b.html",
+      "viewport": 768,
+      "overflow": false,
+      "scrollWidth": 768,
+      "broken_images": [],
+      "missing_local_links": [],
+      "font": "\"Segoe UI\", Tahoma, Arial, sans-serif"
+    },
+    {
+      "page": "BaiTap9.html",
+      "viewport": 768,
+      "overflow": false,
+      "scrollWidth": 768,
+      "broken_images": [],
+      "missing_local_links": [],
+      "font": "\"Segoe UI\", Tahoma, Arial, sans-serif"
+    },
+    {
+      "page": "index.html",
+      "viewport": 768,
+      "overflow": false,
+      "scrollWidth": 768,
+      "broken_images": [],
+      "missing_local_links": [],
+      "font": "\"Segoe UI\", Tahoma, Arial, sans-serif"
+    },
+    {
+      "page": "BaiTap1.html",
+      "viewport": 390,
+      "overflow": false,
+      "scrollWidth": 390,
+      "broken_images": [],
+      "missing_local_links": [],
+      "font": "\"Segoe UI\", Tahoma, Arial, sans-serif"
+    },
+    {
+      "page": "BaiTap2.html",
+      "viewport": 390,
+      "overflow": false,
+      "scrollWidth": 390,
+      "broken_images": [],
+      "missing_local_links": [],
+      "font": "\"Segoe UI\", Tahoma, Arial, sans-serif"
+    },
+    {
+      "page": "BaiTap4.html",
+      "viewport": 390,
+      "overflow": false,
+      "scrollWidth": 390,
+      "broken_images": [],
+      "missing_local_links": [],
+      "font": "\"Segoe UI\", Tahoma, Arial, sans-serif"
+    },
+    {
+      "page": "BaiTap5.html",
+      "viewport": 390,
+      "overflow": false,
+      "scrollWidth": 390,
+      "broken_images": [],
+      "missing_local_links": [],
+      "font": "\"Segoe UI\", Tahoma, Arial, sans-serif"
+    },
+    {
+      "page": "BaiTap6.html",
+      "viewport": 390,
+      "overflow": false,
+      "scrollWidth": 390,
+      "broken_images": [],
+      "missing_local_links": [],
+      "font": "\"Segoe UI\", Tahoma, Arial, sans-serif"
+    },
+    {
+      "page": "BaiTap7.html",
+      "viewport": 390,
+      "overflow": false,
+      "scrollWidth": 390,
+      "broken_images": [],
+      "missing_local_links": [],
+      "font": "\"Segoe UI\", Tahoma, Arial, sans-serif"
+    },
+    {
+      "page": "BaiTap8a.html",
+      "viewport": 390,
+      "overflow": false,
+      "scrollWidth": 390,
+      "broken_images": [],
+      "missing_local_links": [],
+      "font": "\"Segoe UI\", Tahoma, Arial, sans-serif"
+    },
+    {
+      "page": "BaiTap8b.html",
+      "viewport": 390,
+      "overflow": false,
+      "scrollWidth": 390,
+      "broken_images": [],
+      "missing_local_links": [],
+      "font": "\"Segoe UI\", Tahoma, Arial, sans-serif"
+    },
+    {
+      "page": "BaiTap9.html",
+      "viewport": 390,
+      "overflow": false,
+      "scrollWidth": 390,
+      "broken_images": [],
+      "missing_local_links": [],
+      "font": "\"Segoe UI\", Tahoma, Arial, sans-serif"
+    },
+    {
+      "page": "index.html",
+      "viewport": 390,
+      "overflow": false,
+      "scrollWidth": 390,
+      "broken_images": [],
+      "missing_local_links": [],
+      "font": "\"Segoe UI\", Tahoma, Arial, sans-serif"
+    }
+  ],
+  "hover": {
+    "before": 197.609375,
+    "after": 282.28125,
+    "read_more_opacity": 1.0
+  },
+  "notes": "Browser rendered inline HTML/CSS and local images via data URIs because network navigation restricted in QA environment. Remote Font Awesome CDN was excluded; offline fallback remains."
+}

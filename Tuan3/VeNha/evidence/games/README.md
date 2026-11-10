@@ -1,0 +1,1 @@
+﻿Minh chứng game được lưu trong các thư mục con. CSS Speedrun: ảnh chụp toàn màn hình sau khi hoàn thành đủ 10 level tại `css-speedrun/css-speedrun-completed.png`. CSS Diner: bổ sung ảnh chụp thực tế vào `css-diner/` nếu cần nộp minh chứng.

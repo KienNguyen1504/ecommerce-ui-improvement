@@ -1,0 +1,191 @@
+<!doctype html>
+
+
+<html lang="vi">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="#fcfaff" name="theme-color"/>
+<meta content="Xây một layout như xây một hệ thống. - CSS Studio 03 | Bài tập CSS Tuần 3 - UEH" name="description"/>
+<title>Xây một layout như xây một hệ thống. | CSS Lab · Week 03</title>
+<link href="assets/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="css/style.css" rel="stylesheet"/>
+</head>
+<body class="lesson-page">
+<a class="skip-link" href="#main">
+   Bỏ qua điều hướng
+  </a>
+<header class="site-header"><div class="header-inner"><a aria-label="Kiên | CSS Lab Tuần 3" class="brand" href="index.html"><span class="brand-mark">K.</span><span>kiên<span class="brand-muted"> / css lab</span></span></a><nav aria-label="Điều hướng" class="site-nav"><a href="index.html">Trang chủ</a><a aria-current="location" href="index.html#assignments">Bài tập</a><a href="index.html#featured">Bài nổi bật</a></nav><a class="header-cta" href="https://github.com/KienNguyen1504/ecommerce-ui-improvement" rel="noopener noreferrer" target="_blank">GitHub <svg aria-hidden="true" fill="none" height="15" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24" width="15"><path d="M14 4h6v6M20 4l-9 9"></path><path d="M18 13v6a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6"></path></svg></a></div></header>
+<div class="page-container" id="main">
+<nav aria-label="Breadcrumb" class="breadcrumb">
+<a href="index.html">Trang chủ</a>
+<span>
+     /
+    </span>
+<span>
+     BÀI 7
+    </span>
+</nav>
+<section class="lesson-head">
+<div>
+<span class="eyebrow">
+      BÀI 7 · CSS PRACTICE
+     </span>
+<h1>
+      Xây một layout như xây một hệ thống.
+     </h1>
+<p>
+      Dùng HTML có ngữ nghĩa để chia header, navigation, main và footer, sau đó ghép bằng Flexbox.
+     </p>
+</div>
+<div class="lesson-badge">
+<svg aria-hidden="true" class="icon" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24" width="24">
+<path d="m8 7-5 5 5 5m8-10 5 5-5 5m-3-16-3 20">
+</path>
+</svg>
+<span>
+      LAB
+      <br/>
+<b>
+       7
+      </b>
+</span>
+</div>
+</section>
+<div class="skill-pills">
+<span>
+     Semantic HTML
+    </span>
+<span>
+     Flexbox
+    </span>
+<span>
+     Box Model
+    </span>
+</div>
+<section class="surface">
+<div class="surface-top">
+<span class="eyebrow">
+      LIVE DEMO
+     </span>
+<h2>
+      Tổ chức trang bằng những vùng rõ ràng
+     </h2>
+</div>
+<div class="wrapper-demo" id="wrapper">
+<span class="wrapper-tag">
+      #wrapper · layout container
+     </span>
+<header>
+      HEADER
+      <small>
+       Branding &amp; page intro
+      </small>
+</header>
+<div class="wrapper-body">
+<nav aria-label="Menu minh họa">
+       NAV
+       <small>
+        Navigation
+       </small>
+<a href="#wrapper">
+        Home
+       </a>
+<a href="#wrapper">
+        Explore
+       </a>
+</nav>
+<main>
+       MAIN
+       <small>
+        Main content
+       </small>
+<div class="wrapper-placeholder">
+<span>
+</span>
+<span>
+</span>
+<span>
+</span>
+</div>
+</main>
+</div>
+<footer>
+      FOOTER
+      <small>
+       Additional information
+      </small>
+</footer>
+</div>
+</section>
+<section class="surface">
+<div class="surface-top">
+<span class="eyebrow">
+      CODE / GIẢI THÍCH
+     </span>
+<h2>
+      Flexbox và Box Model trong layout
+     </h2>
+</div>
+<pre class="code-sample"><code>#wrapper { max-width: 700px; margin: auto; padding: 14px; border: 2px solid #24354b; }
+.wrapper-body { display: flex; gap: 12px; }
+.wrapper-body nav { flex: 0 0 23%; }
+.wrapper-body main { flex: 1; }</code></pre>
+<p class="muted">
+     Thầy cho
+     <code>
+      header
+     </code>
+     ,
+     <code>
+      nav
+     </code>
+     ,
+     <code>
+      main
+     </code>
+     ,
+     <code>
+      footer
+     </code>
+     ; ta bổ sung phần tử chứa nav + main để căn ngang và không phụ thuộc float.
+    </p>
+</section>
+<div class="prev-next">
+<a href="BaiTap6.html">
+     ← Bài trước
+    </a>
+<a href="BaiTap8a.html">
+     Bài tiếp theo →
+    </a>
+</div>
+</div>
+<footer class="site-footer">
+<div class="footer-inner">
+<div>
+<strong>
+      CSS STUDIO / 03
+     </strong>
+<p>
+      Thực hành CSS có hệ thống · Phát triển ứng dụng WEB/TMĐT · UEH
+     </p>
+</div>
+<a href="index.html">
+     Về trang tổng quan
+     <svg aria-hidden="true" class="icon" fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24" width="16">
+<path d="M5 12h14m-6-6 6 6-6 6">
+</path>
+</svg>
+</a>
+</div>
+<div class="footer-bottom">
+<span>
+     2026 · Bài tập cá nhân · TS. Nguyễn Mạnh Tuấn
+    </span>
+<span>
+     HTML5 · CSS3 · Responsive · No framework
+    </span>
+</div>
+</footer>
+</body>
+</html>
