@@ -1,0 +1,1 @@
+Các ảnh minh chứng phải được chụp từ phiên bản chạy trên máy sinh viên. Có thể đặt ảnh theo mẫu `Lab08_E02.png`, `Lab09_E04.png`, `Lab10_E06.png`, `homepage.png`, `github-pages.png`. File Word có khung chờ ảnh để chèn trước khi nộp.

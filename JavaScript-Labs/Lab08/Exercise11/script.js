@@ -1,0 +1,4 @@
+function Country(name,iso,capital,population){this.name=name;this.iso=iso;this.capital=capital;this.population=population;}
+const countries=[new Country('Bahamas','BS','Nassau',301790),new Country('Canada','CA','Ottawa',33679000),new Country('Germany','DE','Berlin',81802257)];
+countries.push(new Country('Spain','ES','Madrid',46505963));countries.push(new Country('United Kingdom','GB','London',62348447));
+const target=document.getElementById('countries');for(const c of countries){const box=document.createElement('article');box.className='country';const img=document.createElement('img');img.src='../assets/flags/'+c.iso+'.png';img.alt='Cờ '+c.name;box.appendChild(img);for(const propertyName in c){const line=document.createElement('div');const strong=document.createElement('strong');strong.textContent=propertyName+': ';line.appendChild(strong);line.append(document.createTextNode(c[propertyName]));box.appendChild(line);}target.appendChild(box);}

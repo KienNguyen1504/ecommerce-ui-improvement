@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Hồ Chí Minh",
+    "country": "Việt Nam"
+  },
+  {
+    "name": "Hà Nội",
+    "country": "Việt Nam"
+  },
+  {
+    "name": "Đà Nẵng",
+    "country": "Việt Nam"
+  },
+  {
+    "name": "Tokyo",
+    "country": "Japan"
+  },
+  {
+    "name": "Seoul",
+    "country": "South Korea"
+  },
+  {
+    "name": "Singapore",
+    "country": "Singapore"
+  }
+]
