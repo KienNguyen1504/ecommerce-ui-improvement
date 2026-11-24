@@ -1,0 +1,53 @@
+.animate-stage {
+  height:165px;
+  position:relative;
+  background:#e7f4ff;
+  border-radius:14px;
+  overflow:hidden
+}
+
+.orbit-dot {
+  position:absolute;
+  top:55px;
+  left:10%;
+  width:54px;
+  height:54px;
+  background:#d86da3;
+  border-radius:50%;
+  animation:move-dot 4s ease-in-out infinite alternate
+}
+
+.pulse-badge {
+  position:absolute;
+  right:15px;
+  bottom:15px;
+  background:#345cc1;
+  color:white;
+  border-radius:9px;
+  padding:8px 12px;
+  animation:badge-pulse 2.1s ease infinite
+}
+
+@keyframes move-dot {
+  to {
+    left:75%;
+    transform:rotate(360deg);
+    background:#38bfa6
+  }
+}
+
+@keyframes badge-pulse {
+  50% {
+    opacity:.55;
+    transform:scale(1.07)
+  }
+}
+
+@media(prefers-reduced-motion:reduce) {
+  .orbit-dot,.pulse-badge {
+    animation:none
+  }
+}
+
+.animate-stage{min-height:220px!important}.pulse-badge{font-size:12px;font-weight:850;letter-spacing:.1em}
+

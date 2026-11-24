@@ -1,0 +1,19 @@
+LAB 07 - CÁCH CHẠY MÃ VÀ LƯU MINH CHỨNG
+
+1. Mở CSS-NangCao/index.html bằng Live Server.
+2. Trong trang chủ, chọn bài ở ô chọn và bấm "Chạy bài đã chọn".
+   Chrome sẽ mở trang riêng và tự tạo nội dung thực hành thật từ HTML/CSS.
+3. Nếu mở trực tiếp Lab07/ExerciseXX/index.html, bấm "Chạy code" để kích hoạt.
+4. Mở style.css (hoặc desktop.css/mobile.css) trong VS Code và chụp đoạn code.
+5. Chụp phần thực hành trong Chrome sau khi đã chạy.
+6. Lưu các ảnh theo mẫu: evidence/ex07-01-code.png và evidence/ex07-01-result.png, tiếp tục đến Exercise19.
+7. Đưa ảnh thật vào báo cáo Word, kèm chú thích và mô tả thuộc tính đã dùng.
+
+LƯU Ý: Có thêm JavaScript rất nhỏ để kích hoạt nút Chạy code. Nó chỉ chèn HTML vào trang sau cú click; CSS của từng bài mới là phần tạo bố cục/hiệu ứng.
+
+Exercise 7.12, 7.13: kiểm tra 1366px và 390px.
+Exercise 7.15, 7.16: rê chuột để kích hoạt hover.
+Exercise 7.18: chụp hai thời điểm của animation.
+Exercise 7.19: sử dụng Bootstrap 3.4.1 trong css/.
+
+Chỉ thay folder CSS-NangCao. Không xóa Advanced-FE hoặc các bài trước.

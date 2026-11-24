@@ -1,0 +1,23 @@
+.multi-floats {
+  display:flow-root
+}
+
+.multi-floats>div {
+  float:left;
+  width:calc(25% - 10px);
+  min-width:80px;
+  text-align:center;
+  margin:0 10px 10px 0;
+  background:#d9e8ff;
+  padding:25px 5px;
+  border-radius:12px
+}
+
+@media(max-width:680px) {
+  .multi-floats>div {
+    width:calc(50% - 10px)
+  }
+}
+
+.multi-floats>div{height:100px;display:grid;place-items:center;font-size:24px;font-weight:800;background:#e6f0fe}
+

@@ -1,0 +1,21 @@
+.rel-boxes {
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap
+}
+
+.rel-boxes>div {
+  width:145px;
+  background:#d7ecff;
+  border-radius:10px;
+  padding:15px
+}
+
+.rel-boxes .moving {
+  position:relative;
+  top:25px;
+  left:16px;
+  background:#fbdce9;
+  border:1px solid #d78ab1
+}
+

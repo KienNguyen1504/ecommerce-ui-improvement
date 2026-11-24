@@ -1,0 +1,36 @@
+.transform-grid {
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  gap:20px;
+  flex-wrap:wrap;
+  padding:24px 0
+}
+
+.transform-grid>div {
+  height:82px;
+  width:100px;
+  border-radius:13px;
+  display:grid;
+  place-items:center;
+  background:#d5eaff;
+  color:#284b90;
+  font-weight:700
+}
+
+.transform-grid .rot {
+  transform:rotate(-10deg)
+}
+
+.transform-grid .scl {
+  transform:scale(1.12)
+}
+
+.transform-grid .skw {
+  transform:skew(-13deg)
+}
+
+.transform-grid .tra {
+  transform:translateY(-12px)
+}
+

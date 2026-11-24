@@ -1,0 +1,20 @@
+.flow-example .chip {
+  background:#dceafe;
+  border:1px solid #8cafec;
+  border-radius:8px;
+  padding:10px;
+  margin:5px;
+  color:#23447c
+}
+
+.flow-example .inline {
+  display:inline-block;
+  width:175px;
+  height:64px
+}
+
+.flow-example .block {
+  display:block
+}
+
+ .flow-example{padding:14px;background:#fff;border:1px solid #e1e9f5;border-radius:14px}.flow-label{font-size:14px;color:#6b7e93}.flow-example .chip{vertical-align:top}.flow-example .block{margin-top:13px}.flow-example .inline{vertical-align:middle} 

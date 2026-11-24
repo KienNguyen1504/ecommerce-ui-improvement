@@ -1,0 +1,34 @@
+@charset "UTF-8";
+:root {--ink:#253249;--muted:#6b778b;--line:#e4e7ef;--pink:#cc7ea7;--blue:#4c7bac;--bg:#f8fafc;}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font:16px/1.55 "Segoe UI",Arial,sans-serif;background:var(--bg);color:var(--ink)}
+img{max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+button,select{font:inherit}
+a:focus-visible,button:focus-visible,select:focus-visible{outline:3px solid #e5a0b8;outline-offset:3px}
+.wrap{width:min(1060px,calc(100% - 44px));margin:auto}
+.bar{border-bottom:1px solid var(--line);background:#fff}
+.bar>.wrap{min-height:66px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{font-weight:850;font-size:18px;letter-spacing:-.045em;color:#26354c}
+.brand span{color:#bc6993}
+.back-link{font-size:13px;font-weight:700;color:#657389}.back-link:hover{text-decoration:underline}
+.lab-heading{padding:47px 0 25px}
+.kicker{font-size:11px;color:#a55a82;letter-spacing:.13em;font-weight:850}
+.lab-heading h1{font-size:clamp(31px,5vw,51px);line-height:1.1;letter-spacing:-.045em;margin:10px 0}
+.lab-heading p{color:var(--muted);max-width:660px;margin:0}
+.runner-controls{display:flex;align-items:center;flex-wrap:wrap;gap:12px;margin:19px 0 25px}
+.run-btn{cursor:pointer;border:0;border-radius:12px;padding:14px 26px;background:#284d85;color:#fff;font-weight:800;box-shadow:0 8px 20px #25487920}
+.run-btn:hover{background:#203d69}
+.run-btn.secondary{background:#fff;color:#284d85;border:1px solid #cbd7e8;box-shadow:none}
+.run-btn[hidden]{display:none}
+.runner-controls small{font-size:12px;color:#6c7b8e}
+.exercise-output[hidden]{display:none}
+.exercise-output{margin:0 0 38px}
+.demo-space{min-height:280px;background:#fff;padding:clamp(18px,4vw,36px);border:1px solid #e5eaf1;border-radius:18px;box-shadow:0 10px 25px #162b4f08;overflow:hidden;position:relative}
+.footer-links{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;padding:22px 0 40px;border-top:1px solid var(--line);font-size:13px;color:#66748a}
+.footer-links a:hover{color:#9d4c79;text-decoration:underline}
+.demo-space .section-note{font-size:13px;color:#71809a}
+@media(max-width:650px){.wrap{width:calc(100% - 28px)}.lab-heading{padding-top:32px}.bar>.wrap{min-height:60px}.demo-space{padding:16px}.runner-controls{align-items:stretch}.run-btn{width:auto}}
+/* Bootstrap 3 được nạp cho Exercise 7.19. Các phần tử bên ngoài .bs-demo vẫn giữ kiểu trình bày của Lab. */
+.bs-demo{font-family:"Helvetica Neue",Arial,sans-serif}

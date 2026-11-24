@@ -1,0 +1,19 @@
+.float-frame {
+  display:flow-root;
+  background:#e7f6f0;
+  border:2px solid #85cdb7;
+  border-radius:14px;
+  padding:15px
+}
+
+.float-image {
+  float:right;
+  width:110px;
+  height:115px;
+  background:#b4e6d4;
+  display:grid;
+  place-items:center;
+  border-radius:10px;
+  margin:0 0 8px 14px
+}
+

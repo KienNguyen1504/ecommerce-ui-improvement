@@ -1,0 +1,32 @@
+(() => {
+'use strict';
+const canvas=document.getElementById('game');const ctx=canvas.getContext('2d');
+const W=canvas.width,H=canvas.height,GROUND=H-57;
+const ui=id=>document.getElementById(id);
+const levelForScore=s=>s>=40?4:s>=20?3:s>=5?2:1;
+const intervalForLevel=lv=>({1:40,2:30,3:25,4:20})[lv];
+const state={status:'ready',score:0,level:1,timer:null,elapsed:0,spawn:0,bird:{x:122,y:255,r:18,vy:0},pipes:[],best:0};
+try{state.best=Number(localStorage.getItem('voltSkyBest')||0);}catch{}
+const rand=(a,b)=>a+Math.random()*(b-a);
+function updateHud(){ui('levelDisplay').textContent='LEVEL '+String(state.level).padStart(2,'0');ui('scoreDisplay').textContent=state.score+' điểm';ui('bestDisplay').textContent='Kỷ lục '+state.best;}
+function reset(){if(state.timer)clearInterval(state.timer);state.timer=null;state.status='ready';state.score=0;state.level=1;state.elapsed=0;state.spawn=0;state.bird={x:122,y:255,r:18,vy:0};state.pipes=[];updateHud();render();}
+function overlay(title,description,buttonText){ui('overlayTitle').textContent=title;ui('overlayText').textContent=description;ui('overlayStart').textContent=buttonText;ui('overlay').classList.remove('hidden');}
+function hideOverlay(){ui('overlay').classList.add('hidden');}
+function setTimer(){if(state.timer)clearInterval(state.timer);state.timer=setInterval(tick,intervalForLevel(state.level));}
+function start(){reset();state.status='playing';state.bird.vy=-300;hideOverlay();setTimer();canvas.focus();}
+function end(win){if(state.timer)clearInterval(state.timer);state.timer=null;state.status=win?'won':'over';state.best=Math.max(state.best,state.score);try{localStorage.setItem('voltSkyBest',String(state.best));}catch{}updateHud();render();overlay(win?'Chiến thắng! ✨':'Chạm ống rồi!','Bạn đạt '+state.score+' điểm · Level '+state.level+(win?' · Đã chinh phục 50 điểm!':' · Nhấn Start để thử lại.'),'Chơi lại →');}
+function flap(){if(state.status==='ready'||state.status==='over'||state.status==='won'){start();return;}if(state.status==='paused'){togglePause();return;}if(state.status==='playing')state.bird.vy=-320;}
+function togglePause(){if(state.status==='playing'){state.status='paused';clearInterval(state.timer);state.timer=null;overlay('Tạm dừng','Nhấn P hoặc nút Tiếp tục để quay lại.','Tiếp tục →');ui('pauseGame').textContent='Tiếp tục';}else if(state.status==='paused'){state.status='playing';hideOverlay();setTimer();ui('pauseGame').textContent='Tạm dừng';canvas.focus();}}
+function addPipe(){const gap=Math.max(156,201-state.level*10);const top=rand(82,GROUND-gap-80);state.pipes.push({x:W+50,width:74,top,bottom:top+gap,passed:false});}
+function updateScore(pipe){if(pipe.passed || pipe.x+pipe.width>state.bird.x-state.bird.r)return;pipe.passed=true;state.score++;if(state.score>state.best){state.best=state.score;try{localStorage.setItem('voltSkyBest',String(state.best));}catch{}}const next=levelForScore(state.score);if(state.score>=50){end(true);return;}if(next!==state.level){state.level=next;setTimer();}updateHud();}
+function collision(pipe){const b=state.bird;const overlapsX=b.x+b.r>pipe.x+6&&b.x-b.r<pipe.x+pipe.width-6;const overlapsY=b.y-b.r<pipe.top || b.y+b.r>pipe.bottom;return overlapsX&&overlapsY;}
+function tick(){if(state.status!=='playing')return;const dt=intervalForLevel(state.level)/1000;state.elapsed+=dt;state.spawn+=dt;const b=state.bird;b.vy+=900*dt;b.y+=b.vy*dt;if(b.y+b.r>=GROUND||b.y-b.r<=0){end(false);return;}const speed=133+state.level*15;for(const pipe of state.pipes){pipe.x-=speed*dt;if(collision(pipe)){end(false);return;}updateScore(pipe);if(state.status!=='playing')return;}state.pipes=state.pipes.filter(p=>p.x+p.width>-20);if(state.spawn>=(1.55-(state.level-1)*.04)){state.spawn=0;addPipe();}render();}
+function roundRect(x,y,w,h,r,color){ctx.fillStyle=color;ctx.beginPath();ctx.roundRect(x,y,w,h,r);ctx.fill();}
+function drawBackground(){const sky=ctx.createLinearGradient(0,0,0,H);sky.addColorStop(0,'#c2ecff');sky.addColorStop(.82,'#f3f7ff');sky.addColorStop(1,'#fdf7e7');ctx.fillStyle=sky;ctx.fillRect(0,0,W,H);for(let i=0;i<6;i++){let x=(i*108+25-state.elapsed*12)%(W+130)-60;let y=70+(i%3)*76;ctx.fillStyle='#ffffffb5';ctx.beginPath();ctx.ellipse(x,y,36,14,0,0,Math.PI*2);ctx.ellipse(x-18,y+4,20,11,0,0,Math.PI*2);ctx.ellipse(x+20,y+4,23,12,0,0,Math.PI*2);ctx.fill();}ctx.fillStyle='#e4f7ec';ctx.fillRect(0,GROUND,W,H-GROUND);ctx.strokeStyle='#9fdab9';ctx.lineWidth=5;ctx.beginPath();ctx.moveTo(0,GROUND);ctx.lineTo(W,GROUND);ctx.stroke();for(let j=0;j<W;j+=30){ctx.fillStyle='#cdebdc';ctx.fillRect(j,GROUND+13+(j%3)*8,17,6);}}
+function drawPipe(p){ctx.save();let pipeFill=ctx.createLinearGradient(p.x,0,p.x+p.width,0);pipeFill.addColorStop(0,'#137c86');pipeFill.addColorStop(.45,'#39bdad');pipeFill.addColorStop(1,'#178b97');roundRect(p.x,-10,p.width,p.top+10,10,pipeFill);roundRect(p.x-6,p.top-24,p.width+12,24,6,'#4ad0b3');roundRect(p.x,p.bottom,p.width,GROUND-p.bottom,10,pipeFill);roundRect(p.x-6,p.bottom,p.width+12,24,6,'#4ad0b3');ctx.fillStyle='#ffffff32';ctx.fillRect(p.x+12,0,7,p.top);ctx.fillRect(p.x+12,p.bottom+20,7,GROUND-p.bottom-25);ctx.restore();}
+function drawBird(){const b=state.bird;ctx.save();ctx.translate(b.x,b.y);ctx.rotate(Math.max(-.25,Math.min(.55,b.vy/660)));ctx.fillStyle='#7e9dcc44';ctx.beginPath();ctx.ellipse(3,18,24,5,0,0,Math.PI*2);ctx.fill();ctx.fillStyle='#ffbe65';ctx.beginPath();ctx.ellipse(0,0,24,21,0,0,Math.PI*2);ctx.fill();ctx.fillStyle='#ffd884';ctx.beginPath();ctx.ellipse(-7,4,12,8,0,0,Math.PI*2);ctx.fill();ctx.fillStyle='#f19cbd';ctx.beginPath();ctx.ellipse(-10,8+Math.sin(state.elapsed*22)*5,12,7,-.35,0,Math.PI*2);ctx.fill();ctx.fillStyle='#26334f';ctx.beginPath();ctx.arc(9,-7,3.5,0,Math.PI*2);ctx.fill();ctx.fillStyle='#f37e62';ctx.beginPath();ctx.moveTo(20,0);ctx.lineTo(37,5);ctx.lineTo(20,12);ctx.fill();ctx.restore();}
+function render(){ctx.clearRect(0,0,W,H);drawBackground();state.pipes.forEach(drawPipe);drawBird();}
+document.addEventListener('keydown',e=>{if(e.key==='ArrowDown'){e.preventDefault();flap();}else if(e.key.toLowerCase()==='p'){e.preventDefault();togglePause();}else if(e.key.toLowerCase()==='r'){e.preventDefault();start();}});
+ui('overlayStart').addEventListener('click',()=>state.status==='paused'?togglePause():start());ui('startGame').addEventListener('click',start);ui('pauseGame').addEventListener('click',togglePause);
+reset();window.voltSkyLevels={levelForScore,intervalForLevel}; // exported for unit tests
+})();

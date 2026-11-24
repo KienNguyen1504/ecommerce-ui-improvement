@@ -1,0 +1,26 @@
+.clear-box {
+  display:flow-root
+}
+
+.clear-a,.clear-b {
+  background:#f6d5e8;
+  border-radius:9px;
+  padding:13px
+}
+
+.clear-a {
+  float:left
+}
+
+.clear-b {
+  float:right
+}
+
+.clear-next {
+  clear:both;
+  background:#e0efff;
+  border-radius:8px;
+  padding:10px;
+  margin:12px 0 0
+}
+

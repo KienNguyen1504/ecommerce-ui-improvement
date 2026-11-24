@@ -1,0 +1,130 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#f6f8fd"><meta name="description" content="Bài thực hành Phát triển ứng dụng TMĐT"><title>VoltLab · Cửa hàng · Nguyễn Văn Kiên</title><link rel="stylesheet" href="./css/site.css"><link rel="stylesheet" href="css/shop.css"></head><body><a href="#main" class="skip-link" style="position:absolute;left:-9999px">Đến nội dung</a><header class="header"><div class="container"><a class="brand" href="./index.html"><span class="brand-bolt">✦</span><span>KIEN<span style="color:#da78a8">.LAB</span><small>WEB DEVELOPMENT STUDIO</small></span></a><nav class="nav" aria-label="Điều hướng"><a href="./index.html">Trang chủ</a><a href="./../CSS-NangCao/index.html">CSS nâng cao</a><a href="./../Advanced-FE/index.html" aria-current="page">Advanced FE</a><a href="./../Nhom3-Game/index.html">Nhóm game</a></nav></div></header><main id="main"><section class="shop-hero"><div class="container"><div><span class="pill">VOLTLAB · ACCESSORIES STORE</span><h1>Những món đồ nhỏ.<br><span style="color:#d46a9c">Trải nghiệm tốt hơn.</span></h1><p>Cùng khám phá bộ sưu tập phụ kiện công nghệ: dễ tìm, dễ so sánh giá, ảnh sản phẩm phóng to và trạng thái kho trực quan.</p><a class="btn" href="#products">Khám phá sản phẩm →</a><div class="feature-row"><span>✓ <b>8 sản phẩm</b> minh họa</span><span>✓ <b>Ảnh zoom</b> và gallery</span><span>✓ <b>Giỏ hàng</b> lưu trên thiết bị</span></div></div><div class="shop-feature"><div class="icon">⚡</div><div><h3 style="font-size:23px;letter-spacing:-.04em;margin:0">VoltLab Picks</h3><p style="margin:5px 0 0;color:#6b7995;font-size:13px">Phụ kiện thiết yếu<br>Giá và tồn kho là dữ liệu mô phỏng cho bài thực hành</p></div></div></div></section><section class="container section" id="products"><div class="section-heading"><div><span class="pill">SẢN PHẨM NỔI BẬT</span><h2 style="margin-top:12px">Chọn theo nhu cầu</h2><p>Danh sách sản phẩm có thể tìm kiếm, lọc nhóm, sắp xếp và thêm vào giỏ hàng.</p></div></div><div class="catalog-layout"><aside class="catalog-sidebar"><h3>Danh mục sản phẩm</h3><div id="categoryFilters" role="group" aria-label="Lọc theo danh mục"></div><p class="shop-alert" style="margin-top:25px">Các giá bán, tồn kho và đánh giá trong giao diện này chỉ phục vụ mô phỏng học tập.</p></aside><div><div class="catalog-tools"><label for="searchInput" class="visually-hidden" style="position:absolute;left:-9999px">Tìm sản phẩm</label><input class="search" id="searchInput" placeholder="Tìm tên sản phẩm..." type="search"><select class="sort" id="sortSelect" aria-label="Sắp xếp"><option value="featured">Nổi bật</option><option value="low">Giá thấp đến cao</option><option value="high">Giá cao đến thấp</option><option value="discount">Giảm giá nhiều nhất</option></select><span id="resultCount" class="section-note"></span></div><div class="products-grid" id="productsGrid"></div></div></div></section><button class="floating-cart" id="cartTrigger" type="button" aria-label="Mở giỏ hàng">🛒 Giỏ hàng <span id="cartCount">0</span></button><div class="cart-overlay" id="cartOverlay" aria-hidden="true"><div class="cart-panel" role="dialog" aria-modal="true" aria-label="Giỏ hàng"><div class="hero-row" style="margin-bottom:20px"><h2 style="margin:0">Giỏ hàng</h2><button id="closeCart" class="btn btn-outline" type="button">Đóng ✕</button></div><div id="cartItems"></div><div class="hero-row" style="margin-top:20px"><strong>Tổng cộng</strong><strong id="cartTotal" class="price">0₫</strong></div><p class="section-note">Đơn hàng là mô phỏng và không có thanh toán thực.</p><button type="button" id="clearCart" class="btn btn-outline">Xóa giỏ hàng</button></div></div></main><footer class="footer"><div class="container"><span>© 2026 Nguyễn Văn Kiên · VoltLab · Cửa hàng</span><span>Phát triển ứng dụng TMĐT · <a href="https://github.com/KienNguyen1504/ecommerce-ui-improvement" target="_blank" rel="noopener">GitHub ↗</a></span></div></footer><script src="js/shop.js"></script><script type="application/json" id="embeddedProducts">[
+  {
+    "id": "p1",
+    "name": "Pin sạc từ tính 5.000mAh",
+    "category": "Pin dự phòng",
+    "price": 119000,
+    "old": 179000,
+    "stock": 22,
+    "initialStock": 60,
+    "badge": "NEW",
+    "description": "Dáng mỏng nhẹ, từ tính gọn gàng cho những chuyến di chuyển.",
+    "images": [
+      "assets/p1-1.png",
+      "assets/p1-2.png"
+    ],
+    "rating": 4.3
+  },
+  {
+    "id": "p2",
+    "name": "Pin sạc PD 20W 10.000mAh",
+    "category": "Pin dự phòng",
+    "price": 249000,
+    "old": 299000,
+    "stock": 12,
+    "initialStock": 100,
+    "badge": "BEST SELLER",
+    "description": "Sạc nhanh 20W, hai cổng linh hoạt, dung lượng đủ dùng mỗi ngày.",
+    "images": [
+      "assets/p2-1.png",
+      "assets/p2-2.png"
+    ],
+    "rating": 4.9
+  },
+  {
+    "id": "p3",
+    "name": "Pin đa cổng LED 20.000mAh",
+    "category": "Pin dự phòng",
+    "price": 389000,
+    "old": 520000,
+    "stock": 9,
+    "initialStock": 45,
+    "badge": "",
+    "description": "Màn hình LED quan sát mức pin và nhiều đầu ra tiện lợi.",
+    "images": [
+      "assets/p3-1.png",
+      "assets/p3-2.png"
+    ],
+    "rating": 4.4
+  },
+  {
+    "id": "p4",
+    "name": "Cáp USB-C bọc dù 60W",
+    "category": "Cáp & củ sạc",
+    "price": 39000,
+    "old": 65000,
+    "stock": 38,
+    "initialStock": 120,
+    "badge": "",
+    "description": "Cáp bọc dù 1 mét, chịu uốn tốt, sạc USB-C 60W.",
+    "images": [
+      "assets/p4-1.png",
+      "assets/p4-2.png"
+    ],
+    "rating": 4.4
+  },
+  {
+    "id": "p5",
+    "name": "Củ sạc nhanh kép 30W",
+    "category": "Cáp & củ sạc",
+    "price": 159000,
+    "old": 199000,
+    "stock": 17,
+    "initialStock": 80,
+    "badge": "NEW",
+    "description": "Sạc hai thiết bị với thiết kế nhỏ gọn, tiện mang đi.",
+    "images": [
+      "assets/p5-1.png",
+      "assets/p5-2.png"
+    ],
+    "rating": 4.6
+  },
+  {
+    "id": "p6",
+    "name": "Ốp lưng trong suốt",
+    "category": "Phụ kiện khác",
+    "price": 29000,
+    "old": 59000,
+    "stock": 52,
+    "initialStock": 100,
+    "badge": "",
+    "description": "Viền mềm, tăng độ bám và bảo vệ các góc của điện thoại.",
+    "images": [
+      "assets/p6-1.png",
+      "assets/p6-2.png"
+    ],
+    "rating": 4.8
+  },
+  {
+    "id": "p7",
+    "name": "Tai nghe Bluetooth ANC",
+    "category": "Phụ kiện khác",
+    "price": 289000,
+    "old": 450000,
+    "stock": 11,
+    "initialStock": 60,
+    "badge": "BEST SELLER",
+    "description": "Tai nghe over-ear với phong cách tối giản, đệm êm.",
+    "images": [
+      "assets/p7-1.png",
+      "assets/p7-2.png"
+    ],
+    "rating": 4.4
+  },
+  {
+    "id": "p8",
+    "name": "Đế sạc không dây 15W",
+    "category": "Phụ kiện khác",
+    "price": 169000,
+    "old": 0,
+    "stock": 24,
+    "initialStock": 65,
+    "badge": "NEW",
+    "description": "Thiết kế để bàn gọn gàng, sử dụng tiện lợi trong góc làm việc.",
+    "images": [
+      "assets/p8-1.png",
+      "assets/p8-2.png"
+    ],
+    "rating": 4.4
+  }
+]</script></body></html>

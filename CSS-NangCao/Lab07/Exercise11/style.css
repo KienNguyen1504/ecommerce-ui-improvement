@@ -1,0 +1,34 @@
+.three-pos {
+  position:relative;
+  min-height:175px;
+  padding:0 23%
+}
+
+.three-pos .left,.three-pos .right {
+  position:absolute;
+  top:0;
+  width:21%;
+  background:#dbe9ff;
+  padding:22px 5px;
+  border-radius:10px;
+  text-align:center
+}
+
+.three-pos .left {
+  left:0
+}
+
+.three-pos .right {
+  right:0;
+  background:#d9f3eb
+}
+
+.three-pos article {
+  padding:12px;
+  background:#fce8f1;
+  border-radius:10px;
+  height:175px
+}
+
+.three-pos{min-height:250px!important}.three-pos article h3{margin:4px 0 9px}
+

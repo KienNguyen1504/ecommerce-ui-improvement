@@ -1,0 +1,5 @@
+ĐÃ ĐỐI CHIẾU: 29 Exercise với ba ZIP Lab gốc; riêng Lab 09/10 dùng HTML mẫu và tài nguyên hình ảnh của Lab.
+ĐÃ CHẠY KIỂM THỬ: 29 trang bằng Chromium, không có pageerror JavaScript trong lượt ghi nhận. Một số kết quả chỉ chứng minh trạng thái giao diện.
+CHƯA THỂ XÁC NHẬN THAY: ảnh DevTools máy sinh viên (Console, Breakpoint, Network), GET HTTP thực trên máy, kết quả sau khi push GitHub Pages.
+BẢN CŨ: Màu sắc/tiêu đề demo thay cấu trúc gốc, không dùng ảnh báo cáo cũ.
+ẢNH MẪU: Report/screenshots từ trình duyệt kiểm thử, không ghi là ảnh do sinh viên tự chụp.

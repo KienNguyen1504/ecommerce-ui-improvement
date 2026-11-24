@@ -1,0 +1,30 @@
+.float-text {
+  display:flow-root
+}
+
+.float-symbol {
+  float:left;
+  display:grid;
+  place-items:center;
+  width:120px;
+  height:105px;
+  background:#b9ddff;
+  border-radius:17px;
+  font-size:42px;
+  color:#3857b6;
+  margin:0 15px 8px 0
+}
+
+.float-symbol-right {
+  float: right;
+  display: grid;
+  place-items: center;
+  width: 75px;
+  height: 75px;
+  margin: 0 0 7px 12px;
+  background: #f9d8e8;
+  color: #a94e80;
+  border-radius: 13px;
+  font-size: 28px;
+}
+

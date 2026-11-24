@@ -1,0 +1,28 @@
+.transition-cards {
+  display:grid;
+  gap:12px
+}
+
+.transition-cards>div {
+  width:130px;
+  text-align:center;
+  background:#c9dcff;
+  padding:12px;
+  border-radius:11px;
+  transition:transform .9s
+}
+
+.transition-cards>div:nth-child(2) {
+  transition-timing-function:ease-in-out
+}
+
+.transition-cards>div:nth-child(3) {
+  transition-timing-function:cubic-bezier(.15,1.3,.8,-.2)
+}
+
+.transition-cards:hover>div {
+  transform:translateX(min(180px,35vw))
+}
+
+.transition-cards{padding:14px;background:#fff;border-radius:14px}.transition-cards>div{border:1px solid #aec4ec}
+

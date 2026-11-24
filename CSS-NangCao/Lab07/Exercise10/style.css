@@ -1,0 +1,23 @@
+.two-col {
+  display:flow-root
+}
+
+.two-col aside {
+  float:left;
+  width:32%;
+  background:#dfedff;
+  padding:17px;
+  border-radius:13px;
+  min-height:150px
+}
+
+.two-col article {
+  margin-left:35%;
+  padding:17px;
+  border-radius:13px;
+  background:#fce8f0;
+  min-height:150px
+}
+
+.two-col{background:white;padding:14px;border-radius:14px;display:flow-root}.two-col aside,.two-col article{line-height:1.9}.two-col h3{font-size:19px;margin:0 0 8px}
+

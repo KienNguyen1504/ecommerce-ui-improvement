@@ -1,0 +1,223 @@
+[
+  {
+    "key": "Lab08_01",
+    "errors": [],
+    "console": [],
+    "imgs": 0,
+    "h": 900
+  },
+  {
+    "key": "Lab08_02",
+    "errors": [],
+    "console": [],
+    "imgs": 0,
+    "h": 900
+  },
+  {
+    "key": "Lab08_03",
+    "errors": [],
+    "console": [],
+    "imgs": 0,
+    "h": 900
+  },
+  {
+    "key": "Lab08_04",
+    "errors": [],
+    "console": [],
+    "imgs": 0,
+    "h": 900
+  },
+  {
+    "key": "Lab08_05",
+    "errors": [],
+    "console": [
+      "log: Script running. Count = 2",
+      "warning: This is a warning for practice",
+      "error: This is a demonstration error message",
+      "log: temp = 14"
+    ],
+    "imgs": 0,
+    "h": 900
+  },
+  {
+    "key": "Lab08_06",
+    "errors": [],
+    "console": [],
+    "imgs": 0,
+    "h": 1001
+  },
+  {
+    "key": "Lab08_07",
+    "errors": [],
+    "console": [],
+    "imgs": 0,
+    "h": 1015
+  },
+  {
+    "key": "Lab08_08",
+    "errors": [],
+    "console": [],
+    "imgs": 0,
+    "h": 1031
+  },
+  {
+    "key": "Lab08_09",
+    "errors": [],
+    "console": [],
+    "imgs": 0,
+    "h": 900
+  },
+  {
+    "key": "Lab08_10",
+    "errors": [],
+    "console": [],
+    "imgs": 0,
+    "h": 900
+  },
+  {
+    "key": "Lab08_11",
+    "errors": [],
+    "console": [],
+    "imgs": 5,
+    "h": 1174
+  },
+  {
+    "key": "Lab09_01",
+    "errors": [],
+    "console": [],
+    "imgs": 3,
+    "h": 1210
+  },
+  {
+    "key": "Lab09_02",
+    "errors": [],
+    "console": [
+      "log: child 0: nodeType=3, name=#text",
+      "log: child 1: nodeType=1, name=DIV",
+      "log: child 2: nodeType=3, name=#text",
+      "log: child 3: nodeType=1, name=DIV",
+      "log: child 4: nodeType=3, name=#text"
+    ],
+    "imgs": 3,
+    "h": 1302
+  },
+  {
+    "key": "Lab09_03",
+    "errors": [],
+    "console": [],
+    "imgs": 3,
+    "h": 1153
+  },
+  {
+    "key": "Lab09_04",
+    "errors": [],
+    "console": [],
+    "imgs": 1,
+    "h": 900
+  },
+  {
+    "key": "Lab09_05",
+    "errors": [],
+    "console": [
+      "log: Không tìm thấy #div1"
+    ],
+    "imgs": 0,
+    "h": 900
+  },
+  {
+    "key": "Lab09_06",
+    "errors": [],
+    "console": [
+      "log: Event target: JSHandle@node type: mouseover position: 543 311",
+      "log: Event target: JSHandle@node type: mousemove position: 543 311"
+    ],
+    "imgs": 1,
+    "h": 900
+  },
+  {
+    "key": "Lab09_07",
+    "errors": [],
+    "console": [],
+    "imgs": 0,
+    "h": 900
+  },
+  {
+    "key": "Lab09_08",
+    "errors": [],
+    "console": [],
+    "imgs": 0,
+    "h": 900
+  },
+  {
+    "key": "Lab10_01",
+    "errors": [],
+    "console": [
+      "log: jQuery: 3.1.1"
+    ],
+    "imgs": 3,
+    "h": 1150
+  },
+  {
+    "key": "Lab10_02",
+    "errors": [],
+    "console": [],
+    "imgs": 3,
+    "h": 1210
+  },
+  {
+    "key": "Lab10_03",
+    "errors": [],
+    "console": [],
+    "imgs": 0,
+    "h": 900
+  },
+  {
+    "key": "Lab10_04",
+    "errors": [],
+    "console": [],
+    "imgs": 0,
+    "h": 900
+  },
+  {
+    "key": "Lab10_05",
+    "errors": [],
+    "console": [],
+    "imgs": 1,
+    "h": 900
+  },
+  {
+    "key": "Lab10_06",
+    "errors": [],
+    "console": [],
+    "imgs": 1,
+    "h": 900
+  },
+  {
+    "key": "Lab10_07",
+    "errors": [],
+    "console": [],
+    "imgs": 5,
+    "h": 972
+  },
+  {
+    "key": "Lab10_08",
+    "errors": [],
+    "console": [],
+    "imgs": 0,
+    "h": 900
+  },
+  {
+    "key": "Lab10_09",
+    "errors": [],
+    "console": [],
+    "imgs": 0,
+    "h": 900
+  },
+  {
+    "key": "Lab10_10",
+    "errors": [],
+    "console": [],
+    "imgs": 1,
+    "h": 900
+  }
+]

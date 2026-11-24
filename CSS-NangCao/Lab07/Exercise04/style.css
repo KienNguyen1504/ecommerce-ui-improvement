@@ -1,0 +1,38 @@
+.stacking {
+  position:relative;
+  height:185px
+}
+
+.sheet {
+  display:grid;
+  place-items:center;
+  position:absolute;
+  width:125px;
+  height:100px;
+  border-radius:15px;
+  color:#fff;
+  font-size:26px;
+  font-weight:800
+}
+
+.sheet.one {
+  top:10px;
+  left:10px;
+  background:#8ac2ed;
+  z-index:1
+}
+
+.sheet.two {
+  top:40px;
+  left:75px;
+  background:#e993bd;
+  z-index:3
+}
+
+.sheet.three {
+  top:70px;
+  left:140px;
+  background:#9bdac5;
+  z-index:2
+}
+

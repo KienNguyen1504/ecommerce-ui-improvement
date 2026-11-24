@@ -1,0 +1,4 @@
+/* CSS cơ sở của bố cục responsive */
+.media-example{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.media-example article{padding:30px 14px;text-align:center;background:#dce9ff;border-radius:15px;font-size:17px;font-weight:750;color:#244c75}
+

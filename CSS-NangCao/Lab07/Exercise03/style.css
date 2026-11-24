@@ -1,0 +1,20 @@
+.absolute-box {
+  position:relative;
+  max-width:340px;
+  padding:35px 22px;
+  background:#e0efff;
+  border-radius:15px
+}
+
+.absolute-box .badge {
+  position:absolute;
+  right:0;
+  top:0;
+  background:#e775a2;
+  color:#fff;
+  padding:7px 15px;
+  border-radius:0 15px 0 12px;
+  font-weight:bold
+}
+
+ .absolute-box{max-width:410px;margin:auto;min-height:0;padding:0;background:#fff;position:relative;border:1px solid #e3e8f0;border-radius:20px;overflow:hidden;box-shadow:0 16px 40px #334c6a10}.absolute-box>img{display:block;width:100%;height:340px;object-fit:contain;background:#f5f7fa}.absolute-box .badge{top:16px;right:16px;font-weight:850;z-index:3;background:#c44e83;color:white;border-radius:10px;padding:9px 13px;position:absolute}.absolute-box .prod-label{padding:18px 22px;display:grid;gap:4px}.absolute-box .prod-label small{font-size:12px;color:#637891} 
