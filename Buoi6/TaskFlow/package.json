@@ -1,0 +1,20 @@
+{
+  "name": "taskflow-todo-app",
+  "version": "2.1.0",
+  "private": true,
+  "description": "Ứng dụng quản lý công việc cá nhân bằng Node.js, Express và SQLite",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "check": "node --check src/server.js && node --check src/db.js && node --check src/routes/tasks.js && node --check src/routes/categories.js && node --check src/routes/stats.js && node --check public/js/app.js"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "better-sqlite3": "^12.2.0",
+    "dotenv": "^16.6.1",
+    "express": "^5.1.0"
+  }
+}
